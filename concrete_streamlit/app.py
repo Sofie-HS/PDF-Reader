@@ -14,7 +14,7 @@ from openpyxl.utils import get_column_letter
 st.set_page_config(page_title="Concrete Test Dashboard", page_icon="📊", layout="wide")
 
 FILENAME_PATTERN = re.compile(
-    r"^W02229_Concrete Test_"
+    r"^W02229_(?:Concrete Test|Test)_"
     r"Sample (?P<sample_id>\d{4})_"
     r"(?P<report_date>\d{4}-\d{2}-\d{2})_"
     r"Report (?P<report_id>\d{6}-\d{2})_"
